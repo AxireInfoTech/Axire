@@ -1,23 +1,22 @@
-
-
 .header-links .nav-link{
-    padding: 10px 20px;
-    font-weight: 600;
+    padding: 0.5vw 1.1vw;
+    font-size: 1.25vw;
+    font-weight: 500;
     cursor: pointer;
     text-decoration: none;
 
 }
 
 .non-active-route{
-    border-bottom: 1px solid #747474;
+    border-bottom: 0.1vw solid #747474;
     color: #ffffff;
 
 }
 
 .active-route{
-border: 1px solid #747474;
-border-bottom: none;
-border-radius: 3px;
-color: #1CA3EC;
+    border: 0.1vw solid #747474;
+    border-bottom: none;
+    border-radius: 0.2vw;
+    color: #1CA3EC;
 }
 
