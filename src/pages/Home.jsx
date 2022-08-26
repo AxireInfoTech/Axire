@@ -4,7 +4,6 @@ import "../styles/home.scss";
 const Home = () => {
   return (
     <div className="home">
-      <img className="logo" src="logo.png" alt="" />
       <div className="content">
         <div className="flex-center">
           <div className="heading-content">
