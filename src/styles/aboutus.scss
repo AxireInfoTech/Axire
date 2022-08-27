@@ -1,0 +1,56 @@
+@import "fonts.scss";
+.content{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 2vw;
+}
+
+.content-area{
+    width: 80%;
+    text-align: center;
+}
+
+.about-head{
+    font-size: 2.5vw;
+    color: $head2-col;
+    font-weight: 400;
+    font-family: $font-head2;
+    margin-bottom: 1vw;
+}
+
+.about-subhead{
+    font-size: 3.5vw;
+    margin-bottom: 1vw;
+    font-family: $font-head;
+    padding: 0 10%;
+    line-height: 4.5vw;
+}
+
+.about-desc{
+    font-size: 1.4vw;
+    line-height: 2vw;
+    font-family: $font-desc;
+    padding: 0 7%;
+    font-weight: 300;
+    color:$desc-col;
+}
+
+.line{
+    width: 60%;
+    margin: 2vw 20%;
+    border-top: 0.1vw solid #707070;
+}
+
+.icons-flex{
+    display: flex;
+    width: 80%;
+    margin: 0 10%;
+    justify-content: space-around;
+    align-content: center;
+    height: 3vw;
+}
+
+.icons-flex img{
+    height: 3vw;
+}
