@@ -10,8 +10,7 @@ const Layout = ({ children }) => {
         <Header />
       </div>
       <img className="logo" src="logo.png" alt="" />
-
-      {children}
+      <div className="page-content">{children}</div>
     </div>
   );
 };
