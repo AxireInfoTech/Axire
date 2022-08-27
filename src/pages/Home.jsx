@@ -8,11 +8,11 @@ const Home = () => {
         <div className="flex-center">
           <div className="heading-content">
             <div className="heading">
-              <p>Meet Axire.</p>
-              <p>The Agency that builds digital solutions for your business.</p>
+              <p className="main-head">Namaste from AXIRE</p>
+              <p>The place that provides digital solutions to your requirements.</p>
             </div>
             <div className="sub-heading">
-              Give your business a digital boost by by partnering with Axire{" "}
+              <p>Want a business with us? Just AXIRE it</p>
             </div>
           </div>
         </div>
