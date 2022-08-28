@@ -1,0 +1,139 @@
+@import './fonts.scss';
+$contact-input-height: 50px;
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-content{
+    width: 80%;
+    margin: 10%;
+}
+
+// left content
+
+.left-content{
+    display: inline-block;
+    width: 42%;
+    margin: 0 4%
+}
+.contact-title{
+    font-size: 3vw;
+    font-family: $font-head;
+    margin: 3vw 0;
+}
+
+.contact-heading{
+    font-family: $font-head;
+    font-size: 2vw;
+}
+
+.contact-description{
+    font-family: $font-desc;
+    margin: 2vw 0;
+    color: #AEAEAE;
+}
+
+.social-icons a{
+    margin-right: 2vw;
+}
+
+.contact-info{
+    margin-top: 3vw;
+}
+.contact-info img{
+    width: 20px;
+    margin-right: 0.5vw;
+}
+
+.contact-info a{
+display: flex;
+align-items: center;
+margin: 1vw 0;
+}
+
+
+
+
+
+
+
+// right content
+.right-content{
+    display: inline-block;
+    width: 50%;
+}
+
+.contact-form{
+    padding: 5%;
+    border-radius: 10px;
+    background-color: #272727;
+    caret-color: #ffffff;
+}
+.contact-form > div{
+    border-radius: 5px;
+    background-color: #0B0B0B;
+}
+.contact-form input{
+    border-radius: 5px;
+    background-color: #0B0B0B;
+    height: $contact-input-height;
+    border: none;
+}
+.contact-form input:focus-visible{
+    outline: none !important;
+}
+.contact-form .input-full{
+    width: 96%;
+    margin: 2%;
+    position: relative;
+
+}
+.input-full input{
+    width: calc(100% - $contact-input-height);
+    margin-left: $contact-input-height;
+}
+.input-half input{
+    width: 94%;
+    padding: 0 3%;
+}
+.contact-form .input-half{
+    display: inline-block;
+    width: 46%;
+    margin: 2%;
+}
+
+.input-icon{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: $contact-input-height;
+    height: $contact-input-height;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.input-icon img{
+    width: 25px;
+}
+
+.contact-form .form-description{
+        font-family: $font-desc;
+        margin: 2vw 0;
+        color: #AEAEAE;
+        background-color: transparent;
+}
+
+.submit-button{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #0177FB;
+    height: 50px;
+    border: none;
+    font-size: 1.5vw;
+    font-family: $font-head;
+    color: #ffffff;
+}
