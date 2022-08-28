@@ -5,6 +5,9 @@ const AboutUs = () => {
   return (
     <>
       <div className="content">
+        <video className="video-el-1" autoPlay muted loop>
+          <source src="animations/MetaBallC.mp4"></source>
+        </video>
         <div className="flex-center">
           <div className="content-area">
             <p className="about-head">About Us</p>

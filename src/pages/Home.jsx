@@ -4,6 +4,9 @@ import "../styles/home.scss";
 const Home = () => {
   return (
     <div className="content">
+      <video className="bg-video" autoPlay muted loop>
+        <source src="animations/EmitterC.mp4"></source>
+      </video>
       <div className="flex-center">
         <div className="heading-content">
           <div className="heading">
