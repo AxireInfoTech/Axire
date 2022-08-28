@@ -1,0 +1,62 @@
+@import './fonts.scss';
+
+
+.service-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.center-div{
+    display: inline-block;
+    width: 100%;
+    // height: fit-content;
+}
+
+.service-content h1, .service-content p{
+    text-align: center;
+    width: 60%;
+    margin: 1.5vw 20%;
+}
+
+.service-content p{
+    color: #AEAEAE;
+    font-family: $font-desc;
+    font-size: 1.25vw;
+}
+
+.service-content h1{
+    font-family: $font-head;
+    font-size: 2.5vw;
+}
+
+
+
+
+.service-cards{
+    width: 70%;
+    margin: 0 15%;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1vw;
+    .servuce-card{
+        border-radius: 10px;
+        margin: 2vw;
+        padding: 1vw;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.1));
+        backdrop-filter: blur(2px);
+        h1{
+            font-size: 1.5vw;
+            margin: 0.5vw;
+        }
+        p{
+            font-size: 1vw;
+            color: #AEAEAE;
+            text-align: justify;
+            margin: 0.5vw;
+        }
+    }
+}
