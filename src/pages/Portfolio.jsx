@@ -20,21 +20,20 @@ const Portfolio = () => {
           <Slider {...settings}>
             <div className="portfolio-card">
               <div className="portfolio-card-left">
-                <div className="quates">
+                {/* <div className="quates">
                   <h3 className="quate-heading">QUALITY IS OUR BEAUTY</h3>
                   <h1 className="quate-content">We make beautiful things</h1>
-                </div>
+                </div> */}
                 <div className="project-details">
                   <h1 className="project-name-heading">Project Name</h1>
                   <h1 className="project-name">
-                    NEFA - Cryptocurrency Exchange website
+                    Buggy Garages
                   </h1>
                   <p className="project-desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maxime mollitia, molestiae quas vel sint com
+                    A new emerging start up that is building a network of garages for easy access to the garages around and we contributed in their growing cause. 
                   </p>
                 </div>
-                <button className="explore-button">Explore</button>
+                {/* <button className="explore-button">Explore</button> */}
               </div>
               <div className="portfolio-card-right">
                 <div className="project-thumbnail">
@@ -60,21 +59,20 @@ const Portfolio = () => {
             </div>
             <div className="portfolio-card">
               <div className="portfolio-card-left">
-                <div className="quates">
+                {/* <div className="quates">
                   <h3 className="quate-heading">QUALITY IS OUR BEAUTY</h3>
                   <h1 className="quate-content">We make beautiful things</h1>
-                </div>
+                </div> */}
                 <div className="project-details">
                   <h1 className="project-name-heading">Project Name</h1>
                   <h1 className="project-name">
-                    NEFA - Cryptocurrency Exchange website
+                    The VFX Company
                   </h1>
                   <p className="project-desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maxime mollitia, molestiae quas vel sint com
+                    A startup that helps creating 3d animations and we helped them showcase their work and give them a boost.
                   </p>
                 </div>
-                <button className="explore-button">Explore</button>
+                {/* <button className="explore-button">Explore</button> */}
               </div>
               <div className="portfolio-card-right">
                 <div className="project-thumbnail">
