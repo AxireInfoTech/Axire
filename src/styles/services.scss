@@ -9,6 +9,18 @@
     height: 100%;
 }
 
+.bg-video-services{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.4;
+    transform: translate3d(0,0,0);
+}
+
 .center-div{
     display: inline-block;
     width: 100%;
@@ -18,22 +30,21 @@
 .service-content h1, .service-content p{
     text-align: center;
     width: 60%;
-    margin: 1.5vw 20%;
+    margin: 1.2vw 20%;
 }
 
 .service-content p{
     color: #AEAEAE;
     font-family: $font-desc;
     font-size: 1.25vw;
+    line-height: 1.8vw;
 }
 
 .service-content h1{
     font-family: $font-head;
     font-size: 2.5vw;
+    font-weight: 600;
 }
-
-
-
 
 .service-cards{
     width: 70%;
@@ -42,21 +53,37 @@
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1vw;
-    .servuce-card{
+    .service-card{
         border-radius: 10px;
         margin: 2vw;
         padding: 1vw;
-        background-image: linear-gradient(rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.1));
-        backdrop-filter: blur(2px);
+        // background-image: linear-gradient(rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.1));
+        background: rgba(70,70,70,0.5);
+        // backdrop-filter: blur(1vw);
         h1{
             font-size: 1.5vw;
             margin: 0.5vw;
+            font-family: $font-head2;
+            font-weight: 500;
+            letter-spacing: 0.05vw;
+            color: $head2-col;
         }
         p{
             font-size: 1vw;
             color: #AEAEAE;
             text-align: justify;
             margin: 0.5vw;
+            font-family: $font-desc;
+            line-height: 1.4vw;
+        }
+    }
+    .service-card:hover{
+        transition: all 2s;
+        box-sizing: border-box;
+        transform: rotateY(-360deg) rotateX(-360deg) scale(1.2) translate3d(0,0,0);
+        background: rgba(70,70,70,0.9);
+        p{
+            color: white;
         }
     }
 }

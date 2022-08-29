@@ -15,11 +15,11 @@ const AboutUs = () => {
             <p className="about-desc">We are a service-based firm who is working hard to provide solutions to your digital problems. Customer satisfaction and maintaining the quality is our priority. Once you Axire it, it’s a never-ending bond that keeps you coming to us.</p>
             <div className="line"></div>
             <div className="icons-flex">
-              <img src="icons/angular.svg"></img>
-              <img src="icons/react.svg"></img>
-              <img src="icons/aws.svg"></img>
-              <img src="icons/ionic.svg"></img>
-              <img src="icons/python.svg"></img>
+              <img src="icons/angular.svg" alt=""></img>
+              <img src="icons/react.svg" alt=""></img>
+              <img src="icons/aws.svg" alt=""></img>
+              <img src="icons/ionic.svg" alt=""></img>
+              <img src="icons/python.svg" alt=""></img>
             </div>
           </div>
         </div>
