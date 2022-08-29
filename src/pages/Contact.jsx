@@ -4,7 +4,7 @@ import "../styles/contact.scss";
 const Contact = () => {
   return (
     <div className="content">
-      <div className="centered-content">
+      <div className="contact-centered-content">
         <div className="left-content">
           <h1 className="contact-title">Contact Us</h1>
           <h3 className="contact-heading">
