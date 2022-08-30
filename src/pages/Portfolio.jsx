@@ -5,6 +5,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Portfolio = () => {
+  const portfolioData = [
+    {
+      name: "Buggie Garages",
+      desc: " A new emerging start up that is building a network of garages for easy access to the garages around and we contributed in their growing cause.",
+      img: "BuggieGarages.png",
+    },
+    {
+      name: "The VFX Company",
+      desc: "  A startup that helps creating 3d animations and we helped them showcase their work and give them a boost.",
+      img: "TheVFXCompanyV2.png",
+    },
+  ];
   var settings = {
     dots: true,
     infinite: true,
@@ -18,90 +30,45 @@ const Portfolio = () => {
         <h1 className="portfolio-heading">Our Portfolio</h1>
         <div className="portfolio-slider">
           <Slider {...settings}>
-            <div className="portfolio-card">
-              <div className="portfolio-card-left">
-                {/* <div className="quates">
+            {portfolioData.map((project) => (
+              <div className="portfolio-card">
+                <div className="portfolio-card-child">
+                  <div className="portfolio-card-left">
+                    {/* <div className="quates">
                   <h3 className="quate-heading">QUALITY IS OUR BEAUTY</h3>
                   <h1 className="quate-content">We make beautiful things</h1>
                 </div> */}
-                <div className="project-details">
-                  <h1 className="project-name-heading">Project Name</h1>
-                  <h1 className="project-name">
-                    Buggy Garages
-                  </h1>
-                  <p className="project-desc">
-                    A new emerging start up that is building a network of garages for easy access to the garages around and we contributed in their growing cause. 
-                  </p>
-                </div>
-                {/* <button className="explore-button">Explore</button> */}
-              </div>
-              <div className="portfolio-card-right">
-                <div className="project-thumbnail">
-                  <div className="project-img-container">
-                    <img
-                      className="img-relative-0"
-                      src="projects/BuggieGarages.png"
-                      alt=""
-                    />
-                    <img
-                      className="img-relative-1 "
-                      src="projects/BuggieGarages.png"
-                      alt=""
-                    />
-                    <img
-                      className="img-relative-2"
-                      src="projects/BuggieGarages.png"
-                      alt=""
-                    />
+                    <div className="project-details">
+                      <h1 className="project-name-heading">Project Name</h1>
+                      <h1 className="project-name">{project.name}</h1>
+                      <p className="project-desc">{project.desc}</p>
+                    </div>
+                    {/* <button className="explore-button">Explore</button> */}
+                  </div>
+                  <div className="portfolio-card-right">
+                    <div className="project-thumbnail">
+                      <div className="project-img-container">
+                        <img
+                          className="img-relative-0"
+                          src={"projects/" + project.img}
+                          alt=""
+                        />
+                        <img
+                          className="img-relative-1 "
+                          src={"projects/" + project.img}
+                          alt=""
+                        />
+                        <img
+                          className="img-relative-2"
+                          src={"projects/" + project.img}
+                          alt=""
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="portfolio-card">
-              <div className="portfolio-card-left">
-                {/* <div className="quates">
-                  <h3 className="quate-heading">QUALITY IS OUR BEAUTY</h3>
-                  <h1 className="quate-content">We make beautiful things</h1>
-                </div> */}
-                <div className="project-details">
-                  <h1 className="project-name-heading">Project Name</h1>
-                  <h1 className="project-name">
-                    The VFX Company
-                  </h1>
-                  <p className="project-desc">
-                    A startup that helps creating 3d animations and we helped them showcase their work and give them a boost.
-                  </p>
-                </div>
-                {/* <button className="explore-button">Explore</button> */}
-              </div>
-              <div className="portfolio-card-right">
-                <div className="project-thumbnail">
-                  <div className="project-img-container">
-                    <img
-                      className="img-relative-0"
-                      src="projects/TheVFXCompanyV2.png"
-                      alt=""
-                    />
-                    <img
-                      className="img-relative-1 "
-                      src="projects/TheVFXCompanyV2.png"
-                      alt=""
-                    />
-                    <img
-                      className="img-relative-2"
-                      src="projects/TheVFXCompanyV2.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* <div className="portfolio-card">
-              <div className="portfolio-card-left">
-                <div className="q">aqwreqwerwr</div>
-              </div>
-              <div className="portfolio-card-right"></div>
-            </div> */}
+            ))}
           </Slider>
         </div>
       </div>
