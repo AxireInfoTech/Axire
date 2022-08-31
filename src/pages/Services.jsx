@@ -25,12 +25,15 @@ const Services = () => {
         <div className="service-content">
           <h1>Our Services</h1>
           <p>
-          We work diligently to make your objectives meaningful. Here’s some of the top services we provide, but we are not limited to this. If you require any IT related solution we are here to help and you are just single step away from your goal. 
+            We work diligently to make your objectives meaningful. Here’s some
+            of the top services we provide, but we are not limited to this. If
+            you require any IT related solution we are here to help and you are
+            just single step away from your goal.
           </p>
         </div>
         <div className="service-cards">
-          {services.map((service) => (
-            <div className="service-card">
+          {services.map((service, index) => (
+            <div className="service-card" key={index}>
               <h1>{service.name}</h1>
               <p>{service.desc}</p>
             </div>
