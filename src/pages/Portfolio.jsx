@@ -30,8 +30,8 @@ const Portfolio = () => {
         <h1 className="portfolio-heading">Our Portfolio</h1>
         <div className="portfolio-slider">
           <Slider {...settings}>
-            {portfolioData.map((project) => (
-              <div className="portfolio-card">
+            {portfolioData.map((project, index) => (
+              <div className="portfolio-card" key={index}>
                 <div className="portfolio-card-child">
                   <div className="portfolio-card-left">
                     {/* <div className="quates">
