@@ -10,11 +10,13 @@ const Portfolio = () => {
       name: "Buggie Garages",
       desc: " A new emerging start up that is building a network of garages for easy access to the garages around and we contributed in their growing cause.",
       img: "BuggieGarages.png",
+      tech: "Angular,Sass,PHP",
     },
     {
       name: "The VFX Company",
       desc: "  A startup that helps creating 3d animations and we helped them showcase their work and give them a boost.",
       img: "TheVFXCompanyV2.png",
+      tech: "Angular,Tailwind,Firebase",
     },
   ];
   var settings = {
@@ -42,6 +44,12 @@ const Portfolio = () => {
                       <h1 className="project-name-heading">Project Name</h1>
                       <h1 className="project-name">{project.name}</h1>
                       <p className="project-desc">{project.desc}</p>
+                      <p className="project-techs">
+                        {project.tech.split(",").length > 0 &&
+                          project.tech
+                            .split(",")
+                            .map((value) => <span>{value}</span>)}
+                      </p>
                     </div>
                     {/* <button className="explore-button">Explore</button> */}
                   </div>
