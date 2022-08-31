@@ -81,6 +81,17 @@
                                 font-size: 1.2vw;
                                 line-height: 2vw;
                             }
+                            .project-techs{
+                                margin: 1vw 0;
+                                span{
+                                    margin-right: 1vw;
+                                    padding: 0.75vw;
+                                    border-radius: 0.5vw;
+                                    border: #AEAEAE solid 1px;
+                                    color: #AEAEAE;
+                                    font-family: $font-desc;
+                                }
+                            }
                         }
                         .explore-button{
                             background-color: #1CA3EC;
