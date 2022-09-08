@@ -1,0 +1,54 @@
+@import "fonts.scss";
+.clients-area{
+    width: 80%;
+}
+
+.client-part{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 15vw;
+    // background-color: aqua;
+}
+
+.client-box{
+    position: relative;
+    float: left;
+    background-color: white;
+    height: 7vw;
+    width: 7vw;
+    margin: 1vw 1vw;
+}
+
+.box-hidden{
+    background: none;
+}
+
+.clients-title{
+    font-size: 3.5vw;
+    margin-bottom: 1.5vw;
+    font-family: $font-head;
+    line-height: 4.5vw;
+    padding-left: 1vw;
+}
+
+.review{
+    margin-top: 1vw;
+    font-size: 1.4vw;
+    font-family: $font-desc;
+    font-weight: 600;
+}
+
+.reviewer{
+    font-size: 1.2vw;
+    margin-top: 1vw;
+    font-family: $font-desc;
+    font-weight: 400;
+}
+
+.client-line{
+    position: relative;
+    float: left;
+    // background-color: pink;
+    width: 100%;
+}
