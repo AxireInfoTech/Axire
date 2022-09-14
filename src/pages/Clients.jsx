@@ -87,16 +87,16 @@ const Clients = () => {
           >
             <img src={"clients/" + clients[2]?.image} alt="" />
           </div>
-          <div className="client-box"></div>
-          <div className="client-box"></div>
-          <div className="client-box"></div>
+          <div className="client-box box-empty"></div>
+          <div className="client-box box-empty"></div>
+          <div className="client-box box-empty"></div>
         </div>
         <div className="client-line">
           <div className="client-box box-hidden"></div>
           <div className="client-box box-hidden"></div>
           <div className="client-box box-hidden"></div>
-          <div className="client-box"></div>
-          <div className="client-box"></div>
+          <div className="client-box box-empty"></div>
+          <div className="client-box box-empty"></div>
         </div>
       </div>
     </div>
