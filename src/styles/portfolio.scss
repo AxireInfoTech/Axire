@@ -14,6 +14,9 @@
             margin: 2vw 5vw;
             font-family: $font-head;
             font-weight: 600;
+            @include mobile{
+                font-size: 5.5vw;
+            }
         } 
         .portfolio-slider{
             width: 90%;
@@ -32,11 +35,18 @@
                 padding: 3vw 0;
                 background-color: #272727;
                 border-radius: 1.5vw;
+                @include mobile{
+                    padding: 5vw 0;
+                    border-radius: 3vw;
+                }
                 .portfolio-card-child{
                     display: grid;
                     grid-auto-rows: 1fr;
                     grid-template-columns: 1fr 1fr;
-    
+                    @include mobile{
+                        grid-template-columns: 1fr;
+                        grid-auto-rows: auto;
+                    }
                 
                     .portfolio-card-left{
                         // width: 46%;
@@ -67,12 +77,18 @@
                                 font-family: $font-head2;
                                 font-weight: 500;
                                 margin: 0.5vw 0;
+                                @include mobile{
+                                    font-size: 4.5vw;
+                                }
                             }
                             .project-name{
                                 font-size: 2vw;
                                 font-family: $font-head;
                                 font-weight: 500;
                                 margin: 0.5vw 0;
+                                @include mobile{
+                                    font-size: 5.5vw;
+                                }
                             }
                             .project-desc{
                                 font-family: $font-desc;
@@ -80,6 +96,10 @@
                                 margin: 0.5vw 0;
                                 font-size: 1.2vw;
                                 line-height: 2vw;
+                                @include mobile{
+                                    font-size: 3.5vw;
+                                    line-height: 4vw;
+                                }
                             }
                             .project-techs{
                                 margin: 1vw 0;
@@ -90,6 +110,11 @@
                                     border: #AEAEAE solid 1px;
                                     color: #AEAEAE;
                                     font-family: $font-desc;
+                                    @include mobile{
+                                        font-size: 3.5vw;
+                                        line-height: 4vw;
+                                        padding: 0.5vw;
+                                    }
                                 }
                             }
                         }

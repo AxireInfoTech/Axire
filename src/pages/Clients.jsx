@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../styles/clients.scss";
+import buggieGarages from "../images/clients/buggie-garages.png";
+import shreejicureclinic from "../images/clients/shreeji-cure-clinic.png";
+import thevfxcompany from "../images/clients/tvc.png";
 
 const Clients = () => {
   const [selectedClient, setSelectedClient] = useState(0);
@@ -8,22 +11,22 @@ const Clients = () => {
     {
       name: "Buggie Garages",
       review:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit amet consequatur dolore eligendi quidem aperiam cum incidunt, assumenda aliquam quo, eum laudantium hic accusamus obcaecati. Explicabo dolore doloremque ab atque!",
-      image: "buggie-garages.png",
-      person: "Santanu",
+        "Axire team is nice and well trained. They handle the assignment very professionally. Team is awesome with result oriented. Hope we should go longer together. Wish you good luck guy’s !!",
+      image: buggieGarages,
+      person: "Santanu Sharma",
     },
     {
       name: "The VFX Company",
       review:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit amet consequatur dolore eligendi quidem aperiam cum incidunt, assumenda aliquam quo, eum laudantium hic accusamus obcaecati. Explicabo dolore doloremque ab atque!",
-      image: "tvc.png",
+        "Development side of Axire team is professional and process of doing project is very smooth. As far as, Our website is running so well without any bugs. We liked to work with you guys and exited to working on further projects in future. All the best!!",
+      image: thevfxcompany,
       person: "Priyank",
     },
     {
       name: "Shreeji Cure Clinic",
       review:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit amet consequatur dolore eligendi quidem aperiam cum incidunt, assumenda aliquam quo, eum laudantium hic accusamus obcaecati. Explicabo dolore doloremque ab atque!",
-      image: "shreeji-cure-clinic.png",
+        "Axire turned my clinic website's dream into reality, proud of what they have done for us. The Axire team has great understanding of client ideas and completely satisfied with the work. We are very thankful.",
+      image: shreejicureclinic,
       person: "Umang Rachhadiya",
     },
   ];
@@ -53,7 +56,7 @@ const Clients = () => {
                 : "client-box"
             }
           >
-            <img src={"clients/" + clients[0]?.image} alt="" />
+            <img src={clients[0]?.image} alt="" />
           </div>
           <div
             onClick={() => setSelectedClient(1)}
@@ -63,7 +66,7 @@ const Clients = () => {
                 : "client-box"
             }
           >
-            <img src={"clients/" + clients[1]?.image} alt="" />
+            <img src={clients[1]?.image} alt="" />
           </div>
         </div>
         <div className="client-part">
@@ -85,7 +88,7 @@ const Clients = () => {
                 : "client-box"
             }
           >
-            <img src={"clients/" + clients[2]?.image} alt="" />
+            <img src={clients[2]?.image} alt="" />
           </div>
           <div className="client-box box-empty"></div>
           <div className="client-box box-empty"></div>

@@ -18,6 +18,12 @@ const Portfolio = () => {
       img: "TheVFXCompanyV2.png",
       tech: "Angular,Tailwind,Firebase",
     },
+    {
+      name: "Shreeji Cure Clinic",
+      desc: " A new emerging start up that is building a network of garages for easy access to the garages around and we contributed in their growing cause.",
+      img: "ShreejiCureClinic.png",
+      tech: "Angular,Tailwind",
+    },
   ];
   var settings = {
     dots: true,
