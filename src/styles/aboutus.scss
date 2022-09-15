@@ -20,6 +20,9 @@
 .content-area{
     width: 80%;
     text-align: center;
+    @include mobile{
+        width: 90%;
+    }
 }
 
 .about-head{
@@ -28,6 +31,9 @@
     font-weight: 400;
     font-family: $font-head2;
     margin-bottom: 1vw;
+    @include mobile{
+        font-size: 7vw;
+    }
 }
 
 .about-subhead{
@@ -36,6 +42,12 @@
     font-family: $font-head;
     padding: 0 10%;
     line-height: 4.5vw;
+    @include mobile{
+        font-size: 9vw;
+        padding: 0;
+        line-height: 9vw;
+        margin: 4vw 0;
+    }
 }
 
 .about-desc{
@@ -45,6 +57,11 @@
     padding: 0 7%;
     font-weight: 300;
     color:$desc-col;
+    @include mobile{
+        font-size: 4vw;
+        padding: 0;
+        line-height: 5vw;
+    }
 }
 
 .line{
@@ -60,8 +77,16 @@
     justify-content: space-around;
     align-content: center;
     height: 3vw;
+    @include mobile{
+        height: 6vw;
+        display: block;
+    }
 }
 
 .icons-flex img{
     height: 3vw;
+    @include mobile{
+        height: 7vw;
+        margin: 2vw;
+    }
 }

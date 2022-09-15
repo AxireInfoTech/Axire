@@ -227,6 +227,139 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <div className="mobile-contact-content">
+        <div>
+          <h1 className="mobile-contact-title">Contact Us</h1>
+          <h3 className="mobile-contact-heading">
+            Get in touch with our friendly team
+          </h3>
+          <p className="mobile-contact-description">
+            Our support goes all the way. We love hearing from customers and
+            visitors and are always happy to help.
+          </p>
+          <div className="contact-form">
+            <div className="input-half">
+              <input
+                onChange={(e) =>
+                  setFormValues({ ...formValues, firstName: e.target.value })
+                }
+                autoComplete="off"
+                type="text"
+                placeholder="First Name"
+                value={formValues.firstName}
+              />
+            </div>
+            <div className="input-half">
+              <input
+                onChange={(e) =>
+                  setFormValues({ ...formValues, lastName: e.target.value })
+                }
+                value={formValues.lastName}
+                autoComplete="off"
+                type="text"
+                placeholder="Last Name"
+              />
+            </div>
+            <div className="input-full">
+              <div className="input-icon">
+                <img src="icons/contact-mail.png" alt="" />
+              </div>
+              <input
+                onChange={(e) =>
+                  setFormValues({ ...formValues, mail: e.target.value })
+                }
+                autoComplete="off"
+                type="text"
+                placeholder="Enter your e-mail"
+                value={formValues.mail}
+              />
+            </div>
+            <div className="input-full">
+              <div className="input-icon">
+                <img src="icons/contact-subject.png" alt="" />
+              </div>
+              <input
+                onChange={(e) =>
+                  setFormValues({ ...formValues, subject: e.target.value })
+                }
+                autoComplete="off"
+                type="text"
+                placeholder="Subject"
+                value={formValues.subject}
+              />
+            </div>
+            <div className="input-full">
+              <div className="input-icon">
+                <img src="icons/contact-message.png" alt="" />
+              </div>
+              <input
+                onChange={(e) =>
+                  setFormValues({ ...formValues, message: e.target.value })
+                }
+                autoComplete="off"
+                type="text"
+                placeholder="How we can help you?"
+                value={formValues.message}
+              />
+            </div>
+            <div
+              className="input-full"
+              style={{ backgroundColor: "transparent" }}
+            >
+              <div className="form-description">{error}</div>
+            </div>
+            <div className="input-full">
+              <button
+                // type="button"
+                onClick={sendMail}
+                className="submit-button"
+                disabled={isSending}
+              >
+                {isSending ? "Sending mail..." : "Submit"}
+              </button>
+              <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+              />
+            </div>
+          </div>
+          <div className="social-icons">
+            <a href="">
+              <img src="social-icons/linkedin.png" alt="" />
+            </a>
+            <a href="">
+              <img src="social-icons/twitter.png" alt="" />
+            </a>
+            <a href="">
+              <img src="social-icons/instagram.png" alt="" />
+            </a>
+            <a href="">
+              <img src="social-icons/facebook.png" alt="" />
+            </a>
+          </div>
+          <div className="mobile-contact-info">
+            <p>
+              <a href="mailto:contactaxire@gmail.com">
+                <img src="social-icons/gmail.png" alt="" />
+                <span> contactaxire@gmail.com</span>
+              </a>
+            </p>
+            <p>
+              <a href="tel:+919999999999">
+                <img src="social-icons/call.png" alt="" />
+                <span> +91-9999-999-999</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
