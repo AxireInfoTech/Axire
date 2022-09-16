@@ -3,22 +3,22 @@
 
 .mobile-header{
     display: none;
-    height: 13vw;
+    height: 15vw;
     @include mobile{
         display: block;
         position: relative;
         .mobile-logo{
             position: absolute;
             height: 7vw;
-            top: 3vw;
-            left: 3vw;
+            top: 4vw;
+            left: 4vw;
                 
             
         }
         .header-button{
             background-color: transparent;
             position: absolute;
-            top: 4vw;
+            top: 5vw;
             right: 4vw;
             img{
                 height: 5vw;
@@ -33,14 +33,12 @@
             .mobile-logo{
                 position: absolute;
                 height: 7vw;
-                top: 3vw;
-                left: 3vw;
-                    
-                
+                top: 4vw;
+                left: 4vw;
             }
             .modal-close{
                 position: absolute;
-                top: 4vw;
+                top: 5vw;
                 right: 4vw;
                 img{
                     height: 5vw;
@@ -48,16 +46,18 @@
                 background-color: transparent;
             }
             .mobile-header-links{
-                margin-top: 20vw;
+                margin-top: 25vw;
                 margin-right: 10vw;
                 font-size: 10vw;
+                font-weight: 400;
                 font-family: $font-head;
                 .mobile-nav-link{
                     text-align: right;
                     display: block;
+                    margin: 1vw 0;
                 }
                 .mobile-active-route{
-                    color: #1CA3EC;
+                    color: $head2-col;
                 }
             }
         }
