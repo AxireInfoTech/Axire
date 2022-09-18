@@ -7,6 +7,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include mobile{
+        height: calc(100% - 15vw);
+    }
     .portfolio-centered{
         width: 100%;
         .portfolio-heading{
@@ -15,12 +19,14 @@
             font-family: $font-head;
             font-weight: 600;
             @include mobile{
-                font-size: 5.5vw;
+                font-size: 6vw;
+                margin-bottom: 4vw;
+                text-align: center;
             }
         } 
         .portfolio-slider{
-            width: 90%;
-            margin: 0 5%;
+            width: 84%;
+            margin: 0 8%;
             .slick-prev:before {
                 // color: #272727;
                 
@@ -38,6 +44,7 @@
                 @include mobile{
                     padding: 5vw 0;
                     border-radius: 3vw;
+                    min-height: 100vw;
                 }
                 .portfolio-card-child{
                     display: grid;
@@ -78,7 +85,7 @@
                                 font-weight: 500;
                                 margin: 0.5vw 0;
                                 @include mobile{
-                                    font-size: 4.5vw;
+                                    font-size: 5vw;
                                 }
                             }
                             .project-name{
@@ -87,7 +94,8 @@
                                 font-weight: 500;
                                 margin: 0.5vw 0;
                                 @include mobile{
-                                    font-size: 5.5vw;
+                                    font-size: 5vw;
+                                    margin-bottom: 2vw;
                                 }
                             }
                             .project-desc{
@@ -97,8 +105,9 @@
                                 font-size: 1.2vw;
                                 line-height: 2vw;
                                 @include mobile{
-                                    font-size: 3.5vw;
-                                    line-height: 4vw;
+                                    font-size: 4vw;
+                                    line-height: 5.5vw;
+                                    margin-bottom: 5vw;
                                 }
                             }
                             .project-techs{
@@ -113,7 +122,8 @@
                                     @include mobile{
                                         font-size: 3.5vw;
                                         line-height: 4vw;
-                                        padding: 0.5vw;
+                                        padding: 1vw;
+                                        margin-right: 2vw;
                                     }
                                 }
                             }
@@ -157,6 +167,9 @@
                                     top: 15px;
                                     scale: 0.95;
                                     opacity: 0.4;
+                                    @include mobile{
+                                        display: none;
+                                    }
                                     
                                 }.img-relative-2{
                                     position: absolute;
@@ -164,7 +177,9 @@
                                     top: 30px;
                                     scale: 0.89;
                                     opacity: 0.3;
-                                    
+                                    @include mobile{
+                                        display: none;
+                                    }
                                 }
                             }
                             
