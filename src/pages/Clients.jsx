@@ -69,7 +69,7 @@ const Clients = () => {
             <img src={clients[1]?.image} alt="" />
           </div>
         </div>
-        <div className="client-part">
+        <div className="client-part client-part-review-1">
           <p className="review">{clients[selectedClient]?.review}</p>
           <p className="reviewer">
             {clients[selectedClient]?.person} :{" "}
@@ -100,6 +100,15 @@ const Clients = () => {
           <div className="client-box box-hidden"></div>
           <div className="client-box box-empty"></div>
           <div className="client-box box-empty"></div>
+        </div>
+        <div className="client-part client-part-review-2">
+          <p className="review">{clients[selectedClient]?.review}</p>
+          <p className="reviewer">
+            {clients[selectedClient]?.person} :{" "}
+            <span style={{ color: "#AEAEAE" }}>
+              {clients[selectedClient]?.name}
+            </span>
+          </p>
         </div>
       </div>
     </div>

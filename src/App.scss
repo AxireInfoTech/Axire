@@ -16,9 +16,13 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    // height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     @include mobile{
-        height: calc(100% - 15vw);
+        // height: calc(100% - 15vw);
+        transform: translateY(calc(-50% - 15vw));
         // background-color: pink;
     }
 }
