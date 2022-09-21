@@ -37,6 +37,8 @@ $contact-input-height_mobile: 40px;
 
 .contact-description{
     font-family: $font-desc;
+    font-size: 1.2vw;
+    line-height: 2vw;
     margin: 2vw 0;
     color: #AEAEAE;
 }
@@ -54,9 +56,10 @@ $contact-input-height_mobile: 40px;
 }
 
 .contact-info a{
-display: flex;
-align-items: center;
-margin: 1vw 0;
+    display: flex;
+    align-items: center;
+    margin: 1vw 0;
+    font-size: 1.2vw;
 }
 
 
@@ -107,10 +110,18 @@ input:-webkit-autofill{
 .input-full input{
     width: calc(100% - $contact-input-height);
     margin-left: $contact-input-height;
+    font-size: 1.1vw;
+    @include mobile{
+        font-size: 3.5vw;
+    }
 }
 .input-half input{
-    width: 94%;
-    padding: 0 3%;
+    width: 90%;
+    padding: 0 5%;
+    font-size: 1.1vw;
+    @include mobile{
+        font-size: 3.5vw;
+    }
 }
 .contact-form .input-half{
     display: inline-block;
@@ -133,7 +144,10 @@ align-items: center;
 }
 }
 .input-icon img{
-    width: 25px;
+    width: 1.7vw;
+    @include mobile{
+        width: 4.5vw;
+    }
 }
 
 .contact-form .form-description{
@@ -164,14 +178,17 @@ align-items: center;
     display: none;
     @include mobile{
         width: 90%;
-        height: 100%;
-        margin: 5vw 5%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(calc(-50% - 15vw));
+        margin: 0 5%;
         text-align: center;
         display: flex;
         align-items: center;
         .mobile-contact-title{
-            font-size: 5vw;
+            font-size: 7vw;
             font-family: $font-head;
+            margin-bottom: 1vw;
         }
         .mobile-contact-heading{
             font-family: $font-head;
@@ -181,20 +198,27 @@ align-items: center;
             font-family: $font-desc;
             margin: 2vw 0;
             color: #AEAEAE;
+            margin-bottom: 5vw;
         }
         .social-icons{
-            margin: 2vw 0;
+            margin: 4vw 0;
+            img{
+                width: 6vw;
+                margin: 0 1vw;
+            }
         }
         .mobile-contact-info{
             text-align: center;
             p{
-                margin: 2vw 0;
+                margin: 3vw 0;
+                font-size: 4.5vw;
                 a{
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     color: #AEAEAE;
                     img{
+                        width: 5vw;
                         margin-right: 2vw;
                     }
                 }

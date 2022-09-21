@@ -13,6 +13,11 @@
     }
     .portfolio-centered{
         width: 100%;
+        @include mobile{
+            position: absolute;
+            top: 50%;
+            transform: translateY(calc(-50% - 15vw));
+        }
         .portfolio-heading{
             font-size: 2.5vw;
             margin: 2vw 5vw;

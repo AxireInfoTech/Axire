@@ -24,6 +24,12 @@
 .center-div{
     display: inline-block;
     width: 100%;
+
+    @include mobile{
+        position: absolute;
+        top: 50%;
+        transform: translateY(calc(-50% - 15vw));
+    }
     // height: fit-content;
 }
 
@@ -70,6 +76,10 @@
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1vw;
+    @include mobile{
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
     .service-card{
         transition: all 2s;
         border-radius: 10px;
@@ -78,6 +88,9 @@
         // background-image: linear-gradient(rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.1));
         background: rgba(70,70,70,0.5);
         // backdrop-filter: blur(1vw);
+        @include mobile{
+            padding: 3vw;
+        }
         h1{
             font-size: 1.5vw;
             margin: 0.5vw;
@@ -85,6 +98,9 @@
             font-weight: 500;
             letter-spacing: 0.05vw;
             color: $head2-col;
+            @include mobile{
+                font-size: 4.5vw;
+            }
         }
         p{
             font-size: 1vw;
@@ -93,6 +109,10 @@
             margin: 0.5vw;
             font-family: $font-desc;
             line-height: 1.4vw;
+            @include mobile{
+                font-size: 3.2vw;
+                line-height: 4vw;
+            }
         }
     }
     .service-card:hover{
