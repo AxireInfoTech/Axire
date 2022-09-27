@@ -35,3 +35,16 @@ a{
 button{
     border: 0;
 }
+
+.preloading-logo{
+    width: 100vw;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: black;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 100;
+}
