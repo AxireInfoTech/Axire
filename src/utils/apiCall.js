@@ -1,7 +1,7 @@
 import { toast } from "react-hot-toast";
 import { getLocalStorage, removeLocalStorage } from "./localStorage";
 
-const BASE_URL = "https://axirewebmail.herokuapp.com/api";
+const BASE_URL = "https://nodemailer-axire.vercel.app/api";
 
 export const fatchData = async (url, initData) => {
   const res = await handleErros(fetch(BASE_URL + url), initData);

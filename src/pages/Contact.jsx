@@ -103,32 +103,29 @@ const Contact = () => {
             visitors and are always happy to help.
           </p>
           <div className="social-icons">
-            <a href="">
+            <a href="https://www.linkedin.com/company/axire-infotech/">
               <img src="social-icons/linkedin.png" alt="" />
             </a>
-            <a href="">
+            <a href="https://twitter.com/AxireInfotech">
               <img src="social-icons/twitter.png" alt="" />
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/axire_infotech/">
               <img src="social-icons/instagram.png" alt="" />
-            </a>
-            <a href="">
-              <img src="social-icons/facebook.png" alt="" />
             </a>
           </div>
           <div className="contact-info">
             <p>
-              <a href="mailto:contactaxire@gmail.com">
+              <a href="mailto:contact@axire.in">
                 <img src="social-icons/gmail.png" alt="" />
-                <span>contactaxire@gmail.com</span>
+                <span>contact@axire.in</span>
               </a>
             </p>
-            <p>
+            {/* <p>
               <a href="tel:+919999999999">
                 <img src="social-icons/call.png" alt="" />
                 <span> +91-9999-999-999</span>
               </a>
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="right-content">
@@ -331,32 +328,32 @@ const Contact = () => {
             </div>
           </div>
           <div className="social-icons">
-            <a href="">
+            <a href="https://www.linkedin.com/company/axire-infotech/">
               <img src="social-icons/linkedin.png" alt="" />
             </a>
-            <a href="">
+            <a href="https://twitter.com/AxireInfotech">
               <img src="social-icons/twitter.png" alt="" />
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/axire_infotech/">
               <img src="social-icons/instagram.png" alt="" />
             </a>
-            <a href="">
+            {/* <a href="">
               <img src="social-icons/facebook.png" alt="" />
-            </a>
+            </a> */}
           </div>
           <div className="mobile-contact-info">
             <p>
-              <a href="mailto:contactaxire@gmail.com">
+              <a href="mailto:contact@axire.in">
                 <img src="social-icons/gmail.png" alt="" />
-                <span> contactaxire@gmail.com</span>
+                <span> contact@axire.in</span>
               </a>
             </p>
-            <p>
+            {/* <p>
               <a href="tel:+919999999999">
                 <img src="social-icons/call.png" alt="" />
                 <span> +91-9999-999-999</span>
               </a>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

@@ -3,13 +3,14 @@ import "../styles/mobile-header.scss";
 import hamburger from "../images/icons/hamburger.png";
 import close from "../images/icons/close.png";
 import { NavLink } from "react-router-dom";
+import logo from "../images/Logo.png";
 
 const MobileHeader = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <div className="mobile-header">
-      <img className="mobile-logo" src="logo.png" alt="" />
+      <img className="mobile-logo" src={logo} alt="" />
 
       <button
         className="header-button"
