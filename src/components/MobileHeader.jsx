@@ -10,7 +10,7 @@ const MobileHeader = () => {
 
   return (
     <div className="mobile-header">
-      <img className="mobile-logo" src={logo} alt="" />
+      <img className="mobile-logo" src={logo} alt="AxireLogo" />
 
       <button
         className="header-button"
@@ -22,7 +22,7 @@ const MobileHeader = () => {
       </button>
       {modalOpen && (
         <div className="header-modal">
-          <img className="mobile-logo" src="logo.png" alt="" />
+          <img className="mobile-logo" src="logo.png" alt="AxireLogo" />
 
           <button
             className="modal-close"
@@ -30,7 +30,7 @@ const MobileHeader = () => {
               setModalOpen(false);
             }}
           >
-            <img src={close} alt="" />
+            <img src={close} alt="CloseButton" />
           </button>
           <div className="mobile-header-links">
             <NavLink

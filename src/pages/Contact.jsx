@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import "../styles/contact.scss";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -92,6 +93,12 @@ const Contact = () => {
 
   return (
     <div className="content">
+      <Helmet>
+          <title>Contact Us - Axire</title>
+          <meta name="title" content="Contact Us"></meta>
+          <meta name="description" content="What's stopping you from get in touch with us?"></meta>
+          <meta name="robots" content="noindex"></meta>
+      </Helmet>
       <div className="contact-centered-content">
         <div className="left-content">
           <h1 className="contact-title">Contact Us</h1>
@@ -104,25 +111,25 @@ const Contact = () => {
           </p>
           <div className="social-icons">
             <a href="https://www.linkedin.com/company/axire-infotech/">
-              <img src="social-icons/linkedin.png" alt="" />
+              <img src="social-icons/linkedin.png" alt="LinkedInIcon" />
             </a>
             <a href="https://twitter.com/AxireInfotech">
-              <img src="social-icons/twitter.png" alt="" />
+              <img src="social-icons/twitter.png" alt="TwitterIcon" />
             </a>
             <a href="https://www.instagram.com/axire_infotech/">
-              <img src="social-icons/instagram.png" alt="" />
+              <img src="social-icons/instagram.png" alt="InstagramIcon" />
             </a>
           </div>
           <div className="contact-info">
             <p>
               <a href="mailto:contact@axire.in">
-                <img src="social-icons/gmail.png" alt="" />
+                <img src="social-icons/gmail.png" alt="GmailIcon" />
                 <span>contact@axire.in</span>
               </a>
             </p>
             {/* <p>
               <a href="tel:+919999999999">
-                <img src="social-icons/call.png" alt="" />
+                <img src="social-icons/call.png" alt="ContactIcon" />
                 <span> +91-9999-999-999</span>
               </a>
             </p> */}
@@ -154,7 +161,7 @@ const Contact = () => {
             </div>
             <div className="input-full">
               <div className="input-icon">
-                <img src="icons/contact-mail.png" alt="" />
+                <img src="icons/contact-mail.png" alt="MailIcon" />
               </div>
               <input
                 onChange={(e) =>
@@ -168,7 +175,7 @@ const Contact = () => {
             </div>
             <div className="input-full">
               <div className="input-icon">
-                <img src="icons/contact-subject.png" alt="" />
+                <img src="icons/contact-subject.png" alt="SubjectIcon" />
               </div>
               <input
                 onChange={(e) =>
@@ -182,7 +189,7 @@ const Contact = () => {
             </div>
             <div className="input-full">
               <div className="input-icon">
-                <img src="icons/contact-message.png" alt="" />
+                <img src="icons/contact-message.png" alt="MessageIcon" />
               </div>
               <input
                 onChange={(e) =>
@@ -259,7 +266,7 @@ const Contact = () => {
             </div>
             <div className="input-full">
               <div className="input-icon">
-                <img src="icons/contact-mail.png" alt="" />
+                <img src="icons/contact-mail.png" alt="MailIcon" />
               </div>
               <input
                 onChange={(e) =>
@@ -273,7 +280,7 @@ const Contact = () => {
             </div>
             <div className="input-full">
               <div className="input-icon">
-                <img src="icons/contact-subject.png" alt="" />
+                <img src="icons/contact-subject.png" alt="SubjectIcon" />
               </div>
               <input
                 onChange={(e) =>
@@ -287,7 +294,7 @@ const Contact = () => {
             </div>
             <div className="input-full">
               <div className="input-icon">
-                <img src="icons/contact-message.png" alt="" />
+                <img src="icons/contact-message.png" alt="MessageIcon" />
               </div>
               <input
                 onChange={(e) =>
@@ -329,28 +336,28 @@ const Contact = () => {
           </div>
           <div className="social-icons">
             <a href="https://www.linkedin.com/company/axire-infotech/">
-              <img src="social-icons/linkedin.png" alt="" />
+              <img src="social-icons/linkedin.png" alt="LinkedInIcon" />
             </a>
             <a href="https://twitter.com/AxireInfotech">
-              <img src="social-icons/twitter.png" alt="" />
+              <img src="social-icons/twitter.png" alt="TwitterIcon" />
             </a>
             <a href="https://www.instagram.com/axire_infotech/">
-              <img src="social-icons/instagram.png" alt="" />
+              <img src="social-icons/instagram.png" alt="InstagramIcon" />
             </a>
             {/* <a href="">
-              <img src="social-icons/facebook.png" alt="" />
+              <img src="social-icons/facebook.png" alt="FacebookIcon" />
             </a> */}
           </div>
           <div className="mobile-contact-info">
             <p>
               <a href="mailto:contact@axire.in">
-                <img src="social-icons/gmail.png" alt="" />
+                <img src="social-icons/gmail.png" alt="GmailIcon" />
                 <span> contact@axire.in</span>
               </a>
             </p>
             {/* <p>
               <a href="tel:+919999999999">
-                <img src="social-icons/call.png" alt="" />
+                <img src="social-icons/call.png" alt="CallIcon" />
                 <span> +91-9999-999-999</span>
               </a>
             </p> */}
