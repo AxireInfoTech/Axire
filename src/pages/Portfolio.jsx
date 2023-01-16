@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import { Helmet } from "react-helmet";
 import "../styles/portfolio.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -34,6 +35,12 @@ const Portfolio = () => {
   };
   return (
     <div className="portfolio-content">
+      <Helmet>
+          <title>Portfolio - Axire</title>
+          <meta name="title" content="Portfolio"></meta>
+          <meta name="description" content="Here are some samples of our work, we are working hard to make it stronger."></meta>
+          <meta name="robots" content="noindex"></meta>
+      </Helmet>
       <div className="portfolio-centered">
         <h1 className="portfolio-heading">Our Portfolio</h1>
         <div className="portfolio-slider">
@@ -65,17 +72,17 @@ const Portfolio = () => {
                         <img
                           className="img-relative-0"
                           src={"projects/" + project.img}
-                          alt=""
+                          alt="PorfolioImg"
                         />
                         <img
                           className="img-relative-1 "
                           src={"projects/" + project.img}
-                          alt=""
+                          alt="PorfolioImg"
                         />
                         <img
                           className="img-relative-2"
                           src={"projects/" + project.img}
-                          alt=""
+                          alt="PorfolioImg"
                         />
                       </div>
                     </div>

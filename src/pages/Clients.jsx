@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import {Helmet} from "react-helmet";
 import "../styles/clients.scss";
 import buggieGarages from "../images/clients/buggie-garages.png";
 import shreejicureclinic from "../images/clients/shreeji-cure-clinic.png";
@@ -45,6 +46,12 @@ const Clients = () => {
 
   return (
     <div className="content">
+      <Helmet>
+          <title>Clients - Axire</title>
+          <meta name="title" content="Clients"></meta>
+          <meta name="description" content="We are making our family bigger everyday become part of environment. Hoping you are in our next empty tile."></meta>
+          <meta name="robots" content="noindex"></meta>
+      </Helmet>
       <div className="clients-area">
         <div className="client-part">
           <h3 className="clients-title">Clients</h3>
@@ -56,7 +63,7 @@ const Clients = () => {
                 : "client-box"
             }
           >
-            <img src={clients[0]?.image} alt="" />
+            <img src={clients[0]?.image} alt="ClientIcon" />
           </div>
           <div
             onClick={() => setSelectedClient(1)}
@@ -66,7 +73,7 @@ const Clients = () => {
                 : "client-box"
             }
           >
-            <img src={clients[1]?.image} alt="" />
+            <img src={clients[1]?.image} alt="ClientIcon" />
           </div>
         </div>
         <div className="client-part client-part-review-1">
@@ -88,7 +95,7 @@ const Clients = () => {
                 : "client-box"
             }
           >
-            <img src={clients[2]?.image} alt="" />
+            <img src={clients[2]?.image} alt="ClientIcon" />
           </div>
           <div className="client-box box-empty"></div>
           <div className="client-box box-empty"></div>

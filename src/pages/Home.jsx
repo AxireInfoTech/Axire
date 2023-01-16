@@ -1,9 +1,16 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "../styles/home.scss";
 
 const Home = () => {
   return (
     <div className="content">
+      <Helmet>
+          <title>Axire</title>
+          <meta name="title" content="Home"></meta>
+          <meta name="description" content="Welcome to home of Axire, let's create a lifetime unbroken bond."></meta>
+          <meta name="robots" content="noindex"></meta>
+      </Helmet>
       <video className="bg-video" autoPlay muted loop>
         <source src="animations/EmitterC.mp4"></source>
       </video>

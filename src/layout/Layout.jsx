@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
         <Header />
       </div>
       <MobileHeader />
-      <img className="logo" src={logo} alt="" />
+      <img className="logo" src={logo} alt="AxireLogo" />
       <div className="page-content">{children}</div>
     </div>
   );

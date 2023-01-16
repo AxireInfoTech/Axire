@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "../styles/services.scss";
 
 const Services = () => {
@@ -18,6 +19,12 @@ const Services = () => {
   ];
   return (
     <div className="service-container">
+      <Helmet>
+          <title>Services - Axire</title>
+          <meta name="title" content="Services"></meta>
+          <meta name="description" content="We are widely providing services over various technologies based on your requirements."></meta>
+          <meta name="robots" content="noindex"></meta>
+      </Helmet>
       <video className="bg-video-services" autoPlay muted loop>
         <source src="animations/TubeC.mp4"></source>
       </video>
