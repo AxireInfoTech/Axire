@@ -10,7 +10,6 @@ const AboutUs = () => {
           <title>About Us - Axire</title>
           <meta name="title" content="About Us"></meta>
           <meta name="description" content="Tune in now to know more about Axire"></meta>
-          <meta name="robots" content="noindex"></meta>
         </Helmet>
         <video className="video-el-1" autoPlay muted loop>
           <source src="animations/MetaBallC.mp4"></source>
