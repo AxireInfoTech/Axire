@@ -21,7 +21,7 @@ const Portfolio = () => {
     },
     {
       name: "Shreeji Cure Clinic",
-      desc: " A new emerging start up that is building a network of garages for easy access to the garages around and we contributed in their growing cause.",
+      desc: "Helped spreading the reach of a medical clinic and spreading information via digital medium.",
       img: "ShreejiCureClinic.png",
       tech: "Angular,Tailwind",
     },
@@ -36,10 +36,13 @@ const Portfolio = () => {
   return (
     <div className="portfolio-content">
       <Helmet>
-          <title>Portfolio - Axire</title>
-          <meta name="title" content="Portfolio"></meta>
-          <meta name="description" content="Here are some samples of our work, we are working hard to make it stronger."></meta>
-          <meta name="robots" content="noindex"></meta>
+        <title>Portfolio - Axire</title>
+        <meta name="title" content="Portfolio"></meta>
+        <meta
+          name="description"
+          content="Here are some samples of our work, we are working hard to make it stronger."
+        ></meta>
+        <meta name="robots" content="noindex"></meta>
       </Helmet>
       <div className="portfolio-centered">
         <h1 className="portfolio-heading">Our Portfolio</h1>
