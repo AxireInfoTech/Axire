@@ -21,7 +21,7 @@ const Portfolio = () => {
     },
     {
       name: "Shreeji Cure Clinic",
-      desc: " A new emerging start up that is building a network of garages for easy access to the garages around and we contributed in their growing cause.",
+      desc: "Helped spreading the reach of a medical clinic and spreading information via digital medium.",
       img: "ShreejiCureClinic.png",
       tech: "Angular,Tailwind",
     },
