@@ -39,7 +39,6 @@ const Portfolio = () => {
           <title>Portfolio - Axire</title>
           <meta name="title" content="Portfolio"></meta>
           <meta name="description" content="Here are some samples of our work, we are working hard to make it stronger."></meta>
-          <meta name="robots" content="noindex"></meta>
       </Helmet>
       <div className="portfolio-centered">
         <h1 className="portfolio-heading">Our Portfolio</h1>

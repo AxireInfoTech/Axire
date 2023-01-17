@@ -97,7 +97,6 @@ const Contact = () => {
           <title>Contact Us - Axire</title>
           <meta name="title" content="Contact Us"></meta>
           <meta name="description" content="What's stopping you from get in touch with us?"></meta>
-          <meta name="robots" content="noindex"></meta>
       </Helmet>
       <div className="contact-centered-content">
         <div className="left-content">

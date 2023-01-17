@@ -9,7 +9,6 @@ const Home = () => {
           <title>Axire</title>
           <meta name="title" content="Home"></meta>
           <meta name="description" content="Welcome to home of Axire, let's create a lifetime unbroken bond."></meta>
-          <meta name="robots" content="noindex"></meta>
       </Helmet>
       <video className="bg-video" autoPlay muted loop>
         <source src="animations/EmitterC.mp4"></source>
