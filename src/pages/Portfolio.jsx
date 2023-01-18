@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import { Helmet } from "react-helmet";
 import "../styles/portfolio.scss";
 import "slick-carousel/slick/slick.css";
@@ -11,28 +11,31 @@ const Portfolio = () => {
       name: "Buggie Garages",
       desc: " A new emerging start up that is building a network of garages for easy access to the garages around and we contributed in their growing cause.",
       img: "BuggieGarages.png",
-      tech: "Angular,Sass,PHP",
+      tech: ['Angular','Sass','PHP'],
+      link: 'https://buggiegarages.com/'
     },
     {
       name: "The VFX Company",
       desc: "  A startup that helps creating 3d animations and we helped them showcase their work and give them a boost.",
       img: "TheVFXCompanyV2.png",
-      tech: "Angular,Tailwind,Firebase",
+      tech: ['Angular','Tailwind','Firebase'],
+      link: 'https://www.thevfxcompany.in/'
     },
     {
       name: "Shreeji Cure Clinic",
       desc: "Helped spreading the reach of a medical clinic and spreading information via digital medium.",
       img: "ShreejiCureClinic.png",
-      tech: "Angular,Tailwind",
+      tech: ['Angular','Tailwind'],
+      link: 'https://shreejicureclinic.com/#/home'
     },
   ];
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+  // var settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  // };
   return (
     <div className="portfolio-content">
       <Helmet>
@@ -40,18 +43,33 @@ const Portfolio = () => {
           <meta name="title" content="Portfolio"></meta>
           <meta name="description" content="Here are some samples of our work, we are working hard to make it stronger."></meta>
       </Helmet>
-      <div className="portfolio-centered">
-        <h1 className="portfolio-heading">Our Portfolio</h1>
-        <div className="portfolio-slider">
+      <div className="center-div">
+        <div className="portfolio-area">
+          <h1 className="portfolio-heading">Our Portfolio</h1>
+          <p className="portfolio-desc">Here are some of our top projects! You can be next in our gallery.</p>
+          <div className="portfolio-card-flex">
+            {portfolioData.map((project) => (
+              <div className="portfolio-card">
+                <a href={project.link} target="_blank" rel="noreferrer"><img src={"projects/" + project.img} alt="ProjectImage"></img></a>
+                <h3 className="portfolio-project">{project.name}</h3>
+                {project['tech'].map((tech)=> {
+                  return(
+                  <p className="portfolio-tech">{tech}</p>
+                  )
+                })}
+              </div>
+            ))}
+          </div>
+          
+        </div>
+      </div>
+        
+        {/* <div className="portfolio-slider">
           <Slider {...settings}>
             {portfolioData.map((project, index) => (
               <div className="portfolio-card" key={index}>
                 <div className="portfolio-card-child">
                   <div className="portfolio-card-left">
-                    {/* <div className="quates">
-                  <h3 className="quate-heading">QUALITY IS OUR BEAUTY</h3>
-                  <h1 className="quate-content">We make beautiful things</h1>
-                </div> */}
                     <div className="project-details">
                       <h1 className="project-name-heading">Project Name</h1>
                       <h1 className="project-name">{project.name}</h1>
@@ -63,7 +81,6 @@ const Portfolio = () => {
                             .map((value) => <span>{value}</span>)}
                       </p>
                     </div>
-                    {/* <button className="explore-button">Explore</button> */}
                   </div>
                   <div className="portfolio-card-right">
                     <div className="project-thumbnail">
@@ -90,8 +107,7 @@ const Portfolio = () => {
               </div>
             ))}
           </Slider>
-        </div>
-      </div>
+        </div> */}
     </div>
   );
 };
