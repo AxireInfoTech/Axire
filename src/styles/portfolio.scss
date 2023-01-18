@@ -8,9 +8,9 @@
     position: relative;
     // top: 50%;
     // background-color: pink;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @include mobile{
         height: calc(100% - 15vw);
@@ -107,7 +107,7 @@
     .portfolio-card img:hover{
         opacity: 0.8;
         width: 150%;
-        height: 35vw;
+        height: 15vw;
         cursor:alias;
     }
 
