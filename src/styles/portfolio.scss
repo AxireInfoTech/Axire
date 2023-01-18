@@ -109,6 +109,9 @@
         width: 150%;
         height: 15vw;
         cursor:alias;
+        @include mobile{
+            height: 25vw;
+        }
     }
 
     .portfolio-project{
