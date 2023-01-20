@@ -50,7 +50,7 @@ const Clients = () => {
           <title>Clients - Axire</title>
           <meta name="title" content="Clients"></meta>
           <meta name="description" content="We are making our family bigger everyday become part of environment. Hoping you are in our next empty tile."></meta>
-          <meta name="robots" content="nofollow"></meta>
+          <meta name="robots" content="index,nofollow"></meta>
       </Helmet>
       <div className="clients-area">
         <div className="client-part">
