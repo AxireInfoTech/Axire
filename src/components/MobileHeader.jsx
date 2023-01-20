@@ -22,7 +22,7 @@ const MobileHeader = () => {
       </button>
       {modalOpen && (
         <div className="header-modal">
-          <img className="mobile-logo" src="logo.png" alt="AxireLogo" />
+          <img className="mobile-logo" src={logo} alt="AxireLogo" />
 
           <button
             className="modal-close"
