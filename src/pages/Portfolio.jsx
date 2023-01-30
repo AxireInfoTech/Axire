@@ -8,26 +8,33 @@ import "slick-carousel/slick/slick-theme.css";
 const Portfolio = () => {
   const portfolioData = [
     {
+      name: "Mr Racing",
+      desc: "Provided a platform for a rising company",
+      img: "MrRacing.png",
+      tech: ["Angular", "Ionic", "Sass"],
+      link: null,
+    },
+    {
       name: "Buggie Garages",
       desc: " A new emerging start up that is building a network of garages for easy access to the garages around and we contributed in their growing cause.",
       img: "BuggieGarages.png",
-      tech: ['Angular','Sass','PHP'],
-      link: 'https://buggiegarages.com/'
+      tech: ["Angular", "Sass", "PHP"],
+      link: "https://buggiegarages.com/",
     },
     {
       name: "The VFX Company",
       desc: "  A startup that helps creating 3d animations and we helped them showcase their work and give them a boost.",
       img: "TheVFXCompanyV2.png",
-      tech: ['Angular','Tailwind','Firebase'],
-      link: 'https://www.thevfxcompany.in/'
+      tech: ["Angular", "Tailwind", "Firebase"],
+      link: "https://www.thevfxcompany.in/",
     },
-    {
-      name: "Shreeji Cure Clinic",
-      desc: "Helped spreading the reach of a medical clinic and spreading information via digital medium.",
-      img: "ShreejiCureClinic.png",
-      tech: ['Angular','Tailwind'],
-      link: 'https://shreejicureclinic.com/#/home'
-    },
+    // {
+    //   name: "Shreeji Cure Clinic",
+    //   desc: "Helped spreading the reach of a medical clinic and spreading information via digital medium.",
+    //   img: "ShreejiCureClinic.png",
+    //   tech: ['Angular','Tailwind'],
+    //   link: 'https://shreejicureclinic.com/#/home'
+    // },
   ];
   // var settings = {
   //   dots: true,
@@ -39,32 +46,44 @@ const Portfolio = () => {
   return (
     <div className="portfolio-content">
       <Helmet>
-          <title>Portfolio - Axire</title>
-          <meta name="title" content="Portfolio"></meta>
-          <meta name="description" content="Here are some samples of our work, we are working hard to make it stronger."></meta>
+        <title>Portfolio - Axire</title>
+        <meta name="title" content="Portfolio"></meta>
+        <meta
+          name="description"
+          content="Here are some samples of our work, we are working hard to make it stronger."
+        ></meta>
       </Helmet>
       <div className="center-div">
         <div className="portfolio-area">
           <h1 className="portfolio-heading">Our Portfolio</h1>
-          <p className="portfolio-desc">Here are some of our top projects! You can be next in our gallery.</p>
+          <p className="portfolio-desc">
+            Here are some of our top projects! You can be next in our gallery.
+          </p>
           <div className="portfolio-card-flex">
-            {portfolioData.map((project) => (
-              <div className="portfolio-card">
-                <a href={project.link} target="_blank" rel="noreferrer"><img src={"projects/" + project.img} alt="ProjectImage"></img></a>
+            {portfolioData.map((project, index) => (
+              <div className="portfolio-card" key={index}>
+                <a
+                  href={project.link}
+                  target={project.link ?? "_blank"}
+                  rel="noreferrer"
+                >
+                  <img src={"projects/" + project.img} alt="ProjectImage"></img>
+                </a>
                 <h3 className="portfolio-project">{project.name}</h3>
-                {project['tech'].map((tech)=> {
-                  return(
-                  <p className="portfolio-tech">{tech}</p>
-                  )
+                {project["tech"].map((tech, i) => {
+                  return (
+                    <p className="portfolio-tech" key={i}>
+                      {tech}
+                    </p>
+                  );
                 })}
               </div>
             ))}
           </div>
-          
         </div>
       </div>
-        
-        {/* <div className="portfolio-slider">
+
+      {/* <div className="portfolio-slider">
           <Slider {...settings}>
             {portfolioData.map((project, index) => (
               <div className="portfolio-card" key={index}>
