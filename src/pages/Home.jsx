@@ -8,7 +8,7 @@ const Home = () => {
       <Helmet>
           <title>Axire</title>
           <meta name="title" content="Home"></meta>
-          <meta name="description" content="Welcome to home of Axire, let's create a lifetime unbroken bond."></meta>
+          <meta name="description" content="Axire is a Dynamic Web & App Development company that builds you a website in affirmative Technologies so let's create a lifetime unbroken bond."></meta>
       </Helmet>
       <video className="bg-video" autoPlay muted loop>
         <source src="animations/EmitterC.mp4"></source>
