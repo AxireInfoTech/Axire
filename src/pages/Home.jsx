@@ -4,7 +4,7 @@ import "../styles/home.scss";
 
 const Home = () => {
   return (
-    <div className="content">
+    <div className="home-content">
       <Helmet>
           <title>Axire</title>
           <meta name="title" content="Home"></meta>

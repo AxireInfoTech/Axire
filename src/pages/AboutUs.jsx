@@ -5,7 +5,7 @@ import "../styles/aboutus.scss"
 const AboutUs = () => {
   return (
     <>
-      <div className="content">
+      <div className="about-content">
         <Helmet>
           <title>About Us - Axire</title>
           <meta name="title" content="About Us"></meta>
