@@ -8,6 +8,13 @@ import "slick-carousel/slick/slick-theme.css";
 const Portfolio = () => {
   const portfolioData = [
     {
+      name: "Pehchaan",
+      desc: "Provided a high-end animated website to a design startup with smoothness, responsiveness and with native motion",
+      img: "Pehchaan.png",
+      tech: ["React","Sass","Framer"],
+      link: "https://thepehchaanco.com/"
+    },
+    {
       name: "Mr Racing",
       desc: "Provided a platform for a rising company",
       img: "MrRacing.png",
@@ -16,25 +23,25 @@ const Portfolio = () => {
     },
     {
       name: "Buggie Garages",
-      desc: " A new emerging start up that is building a network of garages for easy access to the garages around and we contributed in their growing cause.",
+      desc: "A new emerging start up that is building a network of garages for easy access to the garages around and we contributed in their growing cause.",
       img: "BuggieGarages.png",
       tech: ["Angular", "Sass", "PHP"],
       link: "https://buggiegarages.com/",
     },
     {
       name: "The VFX Company",
-      desc: "  A startup that helps creating 3d animations and we helped them showcase their work and give them a boost.",
+      desc: "A startup that helps creating 3d animations and we helped them showcase their work and give them a boost.",
       img: "TheVFXCompanyV2.png",
       tech: ["Angular", "Tailwind", "Firebase"],
       link: "https://www.thevfxcompany.in/",
     },
-    // {
-    //   name: "Shreeji Cure Clinic",
-    //   desc: "Helped spreading the reach of a medical clinic and spreading information via digital medium.",
-    //   img: "ShreejiCureClinic.png",
-    //   tech: ['Angular','Tailwind'],
-    //   link: 'https://shreejicureclinic.com/#/home'
-    // },
+    {
+      name: "Shreeji Cure Clinic",
+      desc: "Helped spreading the reach of a medical clinic and spreading information via digital medium.",
+      img: "ShreejiCureClinic.png",
+      tech: ['Angular','Tailwind'],
+      link: 'https://shreejicureclinic.com/#/home'
+    },
   ];
   // var settings = {
   //   dots: true,
@@ -68,15 +75,19 @@ const Portfolio = () => {
                   rel="noreferrer"
                 >
                   <img src={"projects/" + project.img} alt="ProjectImage"></img>
+                <div className="project-details">
+                  <div>
+                    <h3 className="portfolio-project">{project.name}</h3>
+                    {project["tech"].map((tech, i) => {
+                      return (
+                        <p className="portfolio-tech" key={i}>
+                          {tech}
+                        </p>
+                      );
+                    })}
+                  </div>
+                  </div>
                 </a>
-                <h3 className="portfolio-project">{project.name}</h3>
-                {project["tech"].map((tech, i) => {
-                  return (
-                    <p className="portfolio-tech" key={i}>
-                      {tech}
-                    </p>
-                  );
-                })}
               </div>
             ))}
           </div>

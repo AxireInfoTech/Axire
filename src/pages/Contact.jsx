@@ -92,7 +92,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="content">
+    <div className="contact-content">
       <Helmet>
           <title>Contact Us - Axire</title>
           <meta name="title" content="Contact Us"></meta>

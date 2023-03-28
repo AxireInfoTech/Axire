@@ -45,7 +45,7 @@ const Clients = () => {
   }, []);
 
   return (
-    <div className="content">
+    <div className="clients-content">
       <Helmet>
           <title>Clients - Axire</title>
           <meta name="title" content="Clients"></meta>
