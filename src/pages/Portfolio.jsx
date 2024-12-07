@@ -12,28 +12,35 @@ const Portfolio = () => {
       desc: "Provided a high-end animated website to a design startup with smoothness, responsiveness and with native motion",
       img: "Pehchaan.png",
       tech: ["React","Sass","Framer"],
-      link: "https://thepehchaanco.com/"
+      link: "https://pehchaan-v1.vercel.app/"
     },
     {
-      name: "Mr Racing",
-      desc: "Provided a platform for a rising company",
-      img: "MrRacing.png",
-      tech: ["Angular", "Ionic", "Sass"],
-      link: null,
+      name: "Harikrushna Pattani and Associates",
+      desc: " I developed a uniquely designed website for an architect, ensuring that the design elements clearly reflect the architectural focus.",
+      img: "HarikrushnaPattani.png",
+      tech: ["React", "Ionic", "Sass"],
+      link: "https://www.rutvikjr.com/project/harikrushna-pattani-and-associates",
+    },
+    {
+      name: "Nextn Equipments",
+      desc: "Utilizing cutting-edge laser technology, we deliver precise and clean cuts on aluminium sheets and plates, ensuring dimensional accuracy and minimal material waste.",
+      img: "Nextn.png",
+      tech: ["React", "TypeScript", "Tailwind Css"],
+      link: "https://nextn-equipments.vercel.app/",
     },
     {
       name: "Buggie Garages",
       desc: "A new emerging start up that is building a network of garages for easy access to the garages around and we contributed in their growing cause.",
       img: "BuggieGarages.png",
       tech: ["Angular", "Sass", "PHP"],
-      link: "https://buggiegarages.com/",
+      link: "https://buggie-garages.vercel.app/#/home",
     },
     {
       name: "The VFX Company",
       desc: "A startup that helps creating 3d animations and we helped them showcase their work and give them a boost.",
       img: "TheVFXCompanyV2.png",
       tech: ["Angular", "Tailwind", "Firebase"],
-      link: "https://www.thevfxcompany.in/",
+      link: "https://www.rutvikjr.com/project/the-vfx-company",
     },
     {
       name: "Shreeji Cure Clinic",

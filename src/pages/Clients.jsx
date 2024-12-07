@@ -37,7 +37,7 @@ const Clients = () => {
       console.log(selectedClient);
       console.log(clients.length);
       setSelectedClient((value) => (value + 1) % 3);
-    }, 4000);
+    }, 8000);
     return () => {
       clearInterval(interval);
       setSelectedClient(0);
@@ -97,16 +97,16 @@ const Clients = () => {
           >
             <img src={clients[2]?.image} alt="ClientIcon" />
           </div>
+          {/* <div className="client-box box-empty"></div>
           <div className="client-box box-empty"></div>
-          <div className="client-box box-empty"></div>
-          <div className="client-box box-empty"></div>
+          <div className="client-box box-empty"></div> */}
         </div>
         <div className="client-line">
           <div className="client-box box-hidden"></div>
           <div className="client-box box-hidden"></div>
           <div className="client-box box-hidden"></div>
-          <div className="client-box box-empty"></div>
-          <div className="client-box box-empty"></div>
+          {/* <div className="client-box box-empty"></div>
+          <div className="client-box box-empty"></div> */}
         </div>
         <div className="client-part client-part-review-2">
           <p className="review">{clients[selectedClient]?.review}</p>

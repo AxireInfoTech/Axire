@@ -126,12 +126,18 @@ const Contact = () => {
                 <span>contact@axire.in</span>
               </a>
             </p>
-            {/* <p>
+            <p>
               <a href="tel:+919999999999">
                 <img src="social-icons/call.png" alt="ContactIcon" />
-                <span> +91-9999-999-999</span>
+                <span> +91 9664930012</span>
               </a>
-            </p> */}
+            </p>
+            <p>
+              <a href="https://www.google.com/maps?q=23.080213619997284, 72.50142659532528" target="_blank">
+                <img src="social-icons/address.png" alt="AddressIcon" />
+                <span> Sanelite workspaces, Obelisk building. opp. Shell Petrol pump, scien city, Ahmedabad, Gujarat - 380060.</span>
+              </a>
+            </p>
           </div>
         </div>
         <div className="right-content">
