@@ -18,14 +18,14 @@ const Portfolio = () => {
       name: "Harikrushna Pattani and Associates",
       desc: " I developed a uniquely designed website for an architect, ensuring that the design elements clearly reflect the architectural focus.",
       img: "HarikrushnaPattani.png",
-      tech: ["React", "Ionic", "Sass"],
-      link: "https://www.rutvikjr.com/project/harikrushna-pattani-and-associates",
+      tech: ["React", "Tailwind", " WordPress"],
+      link: "https://harikrushnapattani.com/",
     },
     {
       name: "Nextn Equipments",
       desc: "Utilizing cutting-edge laser technology, we deliver precise and clean cuts on aluminium sheets and plates, ensuring dimensional accuracy and minimal material waste.",
       img: "Nextn.png",
-      tech: ["React", "TypeScript", "Tailwind Css"],
+      tech: ["React", "TypeScript", "Tailwind"],
       link: "https://nextn-equipments.vercel.app/",
     },
     {
